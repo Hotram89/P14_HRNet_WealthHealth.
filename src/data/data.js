@@ -56,3 +56,36 @@ export const statesList = {
 export const servicesList = {
   service: ["Sales", "Marketing", "Engineering", "Human Ressources", "Legal"],
 };
+
+export const users = [
+  {
+    FirstName: "Jennifer",
+    LastName: "Lopez",
+    StartDate: 2004,
+    Department: "Engineering",
+    DateOfBirth: 123,
+    City: "Los Angeles",
+    State: "California",
+    ZipCode: 1234,
+  },
+  {
+    FirstName: "Beyonce",
+    LastName: "Knowles",
+    StartDate: 2010,
+    Department: "Marketing",
+    DateOfBirth: 4091981,
+    City: "Huston",
+    State: "Texas",
+    ZipCode: 1234,
+  },
+  {
+    FirstName: "Shania",
+    LastName: "Twain",
+    StartDate: 1997,
+    Department: "Marketing",
+    DateOfBirth: 28081965,
+    City: "Windsor",
+    State: "Ontario",
+    ZipCode: 1234,
+  },
+];

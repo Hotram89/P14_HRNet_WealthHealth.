@@ -4,7 +4,7 @@ import Picker from "./Picker";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import Dropdown from "./Dropdown";
-import { statesList, servicesList } from "./data.js";
+import { statesList, servicesList } from "../../data/data";
 
 export default function Form() {
   const [userInfos, setUserInfos] = useState({

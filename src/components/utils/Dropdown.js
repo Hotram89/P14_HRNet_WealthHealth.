@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Caret from "../../img/caret.svg";
 import "./Dropdown.css";
+import { v4 as uuidv4, v4 } from "uuid";
 
 export default function Dropdown(props) {
   const arr = props.options;
@@ -34,7 +35,9 @@ export default function Dropdown(props) {
       </div>
       <ul className={className + " dropdown-list "}>
         {arr.map((el) => (
-          <li onClick={handleOption}>{el}</li>
+          <li id={v4()} onClick={handleOption}>
+            {el}
+          </li>
         ))}
       </ul>
     </div>

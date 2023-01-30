@@ -1,0 +1,12 @@
+thead {
+  background-color: #f9b17a;
+}
+
+.container-cards {
+  padding: 2rem;
+}
+
+tr:hover {
+  background-color: aqua;
+  cursor: pointer;
+}

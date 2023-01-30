@@ -1,28 +1,19 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { useEffect, useState } from "react";
-import { getUsers } from "../../store/Reducer/userReducer";
-import { v4 as uuidv4 } from "uuid";
+import { v4 as uuidv4, v4 } from "uuid";
 import Card from "../utils/Card";
+import ApiProvider from "../../data/ApiProvider";
+import BasicTable from "../utils/Table";
+import Header from "../layout/Header";
 
 const EmployeesList = () => {
-  const { users } = useSelector((state) => ({
-    ...state.userReducer,
-  }));
+  let users = new ApiProvider().getUsers();
 
-  const dispatch = useDispatch();
-
-  //   useEffect(() => {
-  //     if (users.length === 0) {
-  //       dispatch(getUsers());
-  //     }
-  //   }, []);
   return (
     <main>
-      <div>Employees List</div>
+      <Header></Header>
       <h1 className="list-title">Current Employees</h1>
       <div className="container-cards">
-        <Card></Card>
+        <BasicTable users={users} />
       </div>
     </main>
   );

@@ -3,6 +3,7 @@ import "./CreateEmployee.css";
 
 import Form from "../utils/Form.js";
 import { useState } from "react";
+import Header from "../layout/Header";
 
 const CreateEmployee = () => {
   //initial state
@@ -10,7 +11,7 @@ const CreateEmployee = () => {
 
   return (
     <main>
-      <h1 className="companyName">HRnet</h1>
+      <Header></Header>
       <h2>View Current Employees</h2>
       <section className="user-add">
         <h1>
